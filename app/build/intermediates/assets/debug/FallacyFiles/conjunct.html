@@ -1,0 +1,81 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <h1 class="title">
+    The Conjunction Fallacy</h1>
+  <strong>Alias:</strong> The Conjunction Effect
+  <p>
+    <strong>Type:</strong> <a href="probfall.html">Probabilistic Fallacy</a>
+    <h3>
+      Thought Experiment:</h3>
+    <p>
+      Which of the following events is most likely to occur within the next year:
+      <ol>
+        <li>The United States will withdraw all troops from Iraq.
+          <li>
+        The United States will withdraw all troops from Iraq and bomb Iranian nuclear facilities.</ol>
+      <p>
+        <a href="#Answer">Answer</a>
+        <h3>
+          Exposition:</h3>
+        <p>
+          The probability of a <a href="glossary.html#Conjunction" target="_top">conjunction</a>
+          is never greater than the probability of its <a href="glossary.html#Conjunct" target="_top">
+            conjunct</a>s. In other words, the probability of two things being true can never
+          be greater than the probability of one of them being true, since in order for both
+          to be true, each must be true. However, when people are asked to compare the probabilities
+          of a conjunction and one of its conjuncts, they sometimes judge that the conjunction
+          is more likely than one of its conjuncts. This seems to happen when the conjunction
+          suggests a scenario that is more easily imagined than the conjunct alone.
+          <p>
+            Interestingly, psychologists Kahneman and Tversky discovered in their experiments
+            that statistical sophistication made little difference in the rates at which people
+            committed the conjunction fallacy. This suggests that it is not enough to teach
+            probability theory alone, but that people need to learn directly about the conjunction
+            fallacy in order to counteract the strong psychological effect of imaginability.
+            <h3>
+              Exposure:</h3>
+            <p>
+              One of Kahneman and Tversky's tests is known as "the Linda Problem":
+              <blockquote>
+                Linda is 31 years old, single, outspoken, and very bright. She majored in philosophy.
+                As a student, she was deeply concerned with issues of discrimination and social
+                justice, and also participated in anti-nuclear demonstrations.</blockquote>
+              <p>
+                Is it more likely that Linda is a bank teller, or a bank teller and feminist? Of
+                course, it is more likely that she is the conjunct than the conjunction. However,
+                the description of Linda given in the problem fits the stereotype of a feminist,
+                whereas it doesn't fit the stereotypical bank teller. Because it is easy to imagine
+                Linda as a feminist, people may misjudge that she is more likely to be both a bank
+                teller and a feminist than a bank teller.
+                <iframe src="http://rcm.amazon.com/e/cm?t=thefallacyfil-20&o=1&p=8&l=as1&asins=0521284147&fc1=006699&IS2=1&lt1=_blank&lc1=006666&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1"
+                  style="width: 120px; height: 240px;" scrolling="no" marginwidth="0" marginheight="0"
+                  frameborder="0" align="right"></iframe>
+                <p>
+                  <strong>Source:</strong> Amos Tversky & Daniel Kahneman, "Judgments of and by Representativeness",
+                  in <cite>Judgment Under Uncertainty: Heuristics and Biases</cite>, Kahneman, Paul
+                  Slovic, and Tversky, editors (1985), pp. 84-98.
+                  <h3>
+                    <a name="Answer">Answer to the Thought Experiment:</a></h3>
+                  <p>
+                    1 is more probable than 2. No matter how unlikely it is that all American troops
+                    will be withdrawn from Iraq within a year, it is less likely that this will happen
+                    <em>and</em> that the U.S. will bomb Iranian nuclear facilities.
+                    <h4>
+                      Technical Appendix:</h4>
+                    <p>
+                      Here is a proof of the theorem of probability theory that a conjunction is never
+                      more probable than its conjuncts. For the axioms cited, see the entry for Probabilistic
+                      Fallacy.
+                      <p>
+                        <strong>Theorem:</strong> P(s & t) &#8804; P(s)
+                        <p>
+                          <strong>Proof:</strong> By Axiom 4 and the fact that P(s & t) = P(t & s), it follows
+                          that P(s & t) = P(t | s)P(s). Now, 0 &#8804; P(t | s) &#8804; 1, by Axiom 1 and
+                          the fact that P(s) &#8804; 1, for all s. The theorem follows from a general fact
+                          about inequalities: if a = bc and 0 &#8804; b &#8804; 1, then a &#8804; c.
+                          <hr />
+</body>
+</html>

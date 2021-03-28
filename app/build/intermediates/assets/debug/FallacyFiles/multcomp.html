@@ -1,0 +1,140 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <h1>
+    Multiple Comparisons Fallacy</h1>
+  <img src="http://fallacyfiles.org/MultComp.bmp" usemap="#Imap" alt="Taxonomy of the Multiple Comparisons Fallacy">
+  <map name="Imap">
+    <area shape="rect" coords="63,13 181,37" href="logifall.html">
+    <area shape="rect" coords="65,48 180,73" href="formfall.html">
+    <area shape="rect" coords="46,84 201,107" href="probfall.html">
+  </map>
+  <h3>
+    Etymology:</h3>
+  <p>
+    The name "multiple comparisons fallacy" appears to come from the science of epidemiology,
+    where comparisons may be made between a diseased group and a healthy group in order
+    to find a difference between the two that might point to the cause of an epidemic.
+    For instance, if every member of the diseased group drank from a particular well
+    and no member of the healthy group did so, that would suggest that the pathogen
+    might be present in the well water. In order to find the source of an epidemic,
+    multiple comparisons between the groups may be drawn.
+    <h3>
+      Example:</h3>
+    <blockquote>
+      &#8230;[I]n 1992, a landmark study appeared from Sweden. A huge investigation, it
+      enrolled everyone living within 300 meters of Sweden's high-voltage transmission
+      line system over a 25-year period. They went far beyond all previous studies in
+      their efforts to measure magnetic fields, calculating the fields that the children
+      were exposed to at the time of their cancer diagnosis and before. This study reported
+      an apparently clear association between magnetic field exposure and childhood leukemia,
+      with a risk ratio for the most highly exposed of nearly 4.
+      <p>
+      &#8230;Surely, here was the proof that power lines were dangerous, the proof that
+      even the physicists and biological naysayers would have to accept. But three years
+      after the study was published, the Swedish research no longer looks so unassailable.
+      &#8230;[T]he original contractor's report&#8230;reveals the remarkable thoroughness
+      of the Swedish team. Unlike the published article, which just summarizes part of
+      the data, the report shows everything they did in great detail, all the things they
+      measured and all the comparisons they made. &#8230;[N]early 800 risk ratios are
+      in the report&#8230;.</blockquote>
+    <p>
+      <a href="#Analysis">Analysis</a>
+      <h3>
+        Exposition:</h3>
+      <p>
+        In <a href="glossary.html#Inductive" title="Claiming a connection of probability between premisses and conclusion.">
+          inductive</a> reasoning, there is always some chance that the <a href="glossary.html#Conclusion"
+            title="The proposition in an argument for which evidence is offered.">conclusion</a>
+        will be false even if the evidence is true. In other words, the connection between
+        the <a href="glossary.html#Premiss" title="The propositions in an argument that provide evidence for the conclusion.">
+          premisses</a> and conclusion is never 100%&#8213;that's only for <a href="glossary.html#Inductive"
+            title="Claiming a connection of necessity between premisses and conclusion.">deductive</a>
+        reasoning. So, the question arises: what level of probability&#8213;called a "confidence
+        level"&#8213;are we willing to accept in our reasoning? In scientific contexts,
+        the confidence level is usually set at 95%.
+        <p>
+          When the confidence level is set at 95%, there is a probability of one in twenty&#8213;that
+          is, 5%&#8213;that a misleading result will occur simply by chance. This has an important
+          consequence that when overlooked leads to the multiple comparisons fallacy. For
+          instance, when comparisons are done in epidemiology, there is a one in twenty chance
+          that such a comparison will show a statistically significant difference. So, if
+          twenty or more comparisons are made in a single study, it will likely get a statistically
+          significant result just by chance. Thus, it's necessary to use a higher confidence
+          level in cases of multiple comparisons.
+          <p>
+            Actually, the situation is worse still: if the things being compared are statistically
+            independent, then it takes only fourteen comparisons for it to be more likely than
+            not to get a statistically significant result by chance. This is a result of the
+            multiplication rule of probability theory. (See the entry for Probabilistic Fallacy
+            for the details.)
+            <p>
+              Another common case of the multiple comparison fallacy occurs in opinion polling,
+              especially during presidential elections. So-called scientific polls typically use
+              a 95% confidence level to determine the sizes of their samples and their margins
+              of error. During national elections there are usually many more than fourteen polls
+              taken, so that it is likely that one or more such polls will be misleading. As a
+              consequence, it is important to compare all of the polls taken at about the same
+              time, and discount outliers. However, this is seldom done by the news media.
+              <h3>
+                Exposure:</h3>
+              <p>
+                The multiple comparisons fallacy is occasionally referred to as "the Texas sharpshooter's
+                fallacy", but I use this name for a different type of mistake. The anecdote that
+                gives rise to the name is that a Texan shoots randomly at the side of a barn, then
+                draws a bullseye around a cluster of bullet holes and claims to be a sharpshooter.
+                This story fits the mistake of jumping to the conclusion that a random cluster of
+                data must be causally related better than it does the multiple comparisons fallacy.
+                A better anecdote for the latter would be a shooter who first draws the bullseye,
+                then randomly shoots twenty times at the barn. Having made one bullseye, the shooter
+                then proceeds to conceal the nineteen misses and claims to be a sharpshooter.
+                <p>
+                  <strong>Source:</strong> Po Bronson, <a href="http://www.wired.com/wired/archive/10.12/prayer_pr.html"
+                    target="_blank">"A Prayer Before Dying"</a>, <cite>Wired</cite>, 2002
+                  <p>
+                    <strong>Resource:</strong> <a href="readpoll.html#Confidence">How to Read a Poll:
+                      The Confidence Game"</a>, <cite>Fallacy Watch</cite>
+                    <p>
+                      <strong>Acknowledgment:</strong> Thanks to David Nichols for a couple of corrections
+                      in the Exposition.
+                      <hr />
+                      <h3>
+                        <a name="Analysis">Analysis of the Example</a>:</h3>
+                      <blockquote>
+                        When scientists saw how many things they had measured&#8230;they began accusing
+                        the Swedes of falling into one of the most fundamental errors in epidemiology, sometimes
+                        called the multiple comparisons fallacy.
+                        <p>
+                          <strong>John Moulder</strong>: The problem is, when you do as they did, hundreds
+                          and hundreds of comparisons, something in the neighborhood of 800 different comparisons,
+                          by the standard way we do statistics, we would expect 5 percent of those to be statistically
+                          elevated and 5 percent to be statistically decreased. And now you have a problem.
+                          If you find, by one measure of exposure, that leukemia is up in a group of kids,
+                          is that real, or is that the result of just random noise in the system?
+                          <p>
+                            <strong>Narrator</strong>: &#8230; Even if nothing is going on due to power lines,
+                            if you measure hundreds of risk ratios, they will scatter by random chance around
+                            a mean of one. Some will be above, and some below. Risk ratios below one suggest
+                            that EMFs protect against cancer, above one, that they increase the cancer rate.
+                            But the published article focused only on the strongest positive risk ratios. The
+                            summary highlights a nearly fourfold increase in risk of childhood leukemia. This
+                            is what the press picks up and the public hears.
+                            <p>
+                              <strong>John Moulder</strong>
+                        : It is not scientifically reasonable to do all the measurements, but then only
+                        pick out the ones that give you the answer you want for publication. If I dredge
+                        through their original report, I can find situations which, looked at in isolation,
+                        without looking at the rest of the report, that if that was the only data I gave
+                        you, I could claim that that proved that power lines protected children against
+                        childhood leukemia.</blockquote>
+                      <p>
+                        <strong>Source:</strong> <a href="http://www.amazon.com/gp/redirect.html?ie=UTF8&location=http%3A%2F%2Fwww.amazon.com%2FCurrents-Frontline-electric-power-cancer%2Fdp%2FB000MOKSV0%3Fie%3DUTF8%26s%3Dvideo%26qid%3D1255830714%26sr%3D1-1&tag=thefallacyfil-20&linkCode=ur2&camp=1789&creative=9325"
+                          target="_blank">"Currents of Fear"</a><img src="http://www.assoc-amazon.com/e/ir?t=thefallacyfil-20&l=ur2&o=1"
+                            width="1" height="1" border="0" alt="" style="border: none !important; margin: 0px !important;" />,
+                        <cite>Frontline</cite>, 1995 <a href="http://www.pbs.org/wgbh/pages/frontline/programs/transcripts/1319.html"
+                          target="_blank">(Transcript)</a>.
+                        <hr />
+</body>
+</html>

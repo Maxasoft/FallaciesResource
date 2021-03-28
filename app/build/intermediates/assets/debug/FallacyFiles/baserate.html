@@ -1,0 +1,120 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <h1 class="title">
+    The Base Rate Fallacy</h1>
+  <strong>Alias:</strong> Neglecting Base Rates
+  <p>
+    <strong>Type:</strong> <a href="probfall.html">Probabilistic Fallacy</a>
+    <h3>
+      Thought Experiment:</h3>
+    <p>
+      Suppose that the rate of disease D is three times higher among homosexuals than
+      among heterosexuals, that is, the percentage of homosexuals who have D is three
+      times the percentage of heterosexuals who have it. Suppose, further, that Pat is
+      diagnosed with the disease, and this is all that you know about Pat. In particular,
+      you don't know anything else about Pat's sexual orientation; in fact, you don't
+      even know whether Pat is male or female. What is the likelihood that Pat is homosexual?
+      <p>
+        <a href="#Answer">Answer</a>
+        <h3>
+          Exposition:</h3>
+        <p>
+          When judging the probability of an event&#8213;for instance, diagnosing a patient's
+          disease&#8213;there are two types of information that may be available:
+          <ol>
+            <li>Generic information about the frequency of events of that type. In the case of
+              diagnosing a disease, this would be information about the prevalence of the disease.
+              <li>
+            Specific information about the case in question. In the case of diagnosis, this
+            would be information about the patient revealed by an examination or tests.</ol>
+          <p>
+            When contrasted with information of type 2, type 1 information is called "base rate"
+            information. For example, if a doctor is considering whether a patient has a certain
+            rare disease, the rarity of the disease is its base rate. In other words, the base
+            rate is the frequency of a generic type of event, leaving aside any information
+            about the specific case at hand.
+            <p>
+              People who have only generic information tend to use it to judge probabilities,
+              which is the rational thing to do since that's all that they have to go on. In contrast,
+              when people have both types of information, they tend to make judgments of probability
+              based entirely upon specific information, leaving out the base rate. This is the
+              base rate fallacy.
+              <p>
+                When one has both generic and specific information, it might seem reasonable to
+                ignore the general information in favor of the more specific. This would indeed
+                be the right thing to do if one had to choose only one type of information, but
+                one should instead use all of the information that one has. There is always some
+                possibility that an observation or test may be wrong, and the probability that it
+                is wrong is affected by the base rate.
+                <iframe src="http://rcm.amazon.com/e/cm?t=thefallacyfil-20&o=1&p=8&l=as1&asins=0521284147&fc1=006699&IS2=1&lt1=_blank&lc1=006666&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1"
+                  style="width: 120px; height: 240px;" scrolling="no" marginwidth="0" marginheight="0"
+                  frameborder="0" align="right"></iframe>
+                <p>
+                  <strong>Source:</strong> Amos Tversky & Daniel Kahneman, "Evidential Impact of Base
+                  Rates", in <cite>Judgment Under Uncertainty: Heuristics and Biases</cite>, Kahneman,
+                  Paul Slovic, and Tversky, editors (1985), pp. 153-160.
+                  <h3>
+                    <a name="Answer">Answer to the Thought Experiment:</a></h3>
+                  <p>
+                    The exact answer to this problem depends upon what percentage of the population
+                    is homosexual. We don't know that exactly, but let's suppose that it is 10%. We
+                    don't need to be precise since this is a "back of the envelope" calculation designed
+                    to check that our intuitive judgments are in the ballpark. So, suppose that we have
+                    a population of 100 people, 10 of whom are homosexuals. Suppose, further, that three
+                    of the homosexuals have disease D, which means that the rate of the disease among
+                    the homosexuals is 3 out of 10, or 30%. Since we are given that the rate of the
+                    disease among heterosexuals is one-third of that among homosexuals, we must suppose
+                    that 10% of the heterosexuals in the population have D, which means that 9 of the
+                    90 heterosexuals have D. So, the total number of persons with the disease in our
+                    population is 12, three of whom are homosexuals. Thus, all that we know about Pat
+                    is that he or she has D, so Pat is one of the unlucky twelve. Therefore, the chance
+                    that Pat is homosexual is 3 in 12, or 25%.
+                    <p>
+                      If you're like most people, you probably estimated that the likelihood that Pat
+                      is homosexual is much higher than 25%. If you thought it was 75%, then you were
+                      probably basing your estimate on the fact that the rate of the disease is three
+                      times higher among homosexuals. In doing this, you neglected to take into consideration
+                      the base rate of homosexuality in the population. You might not have had any precise
+                      information on this rate, but it is common knowledge that homosexuals are a small
+                      minority. For this reason, even though the rate of the disease is three times higher
+                      in the homosexual sub-population, it is still more likely that a randomly chosen
+                      person with the disease is a heterosexual, simply because they are the vast majority
+                      of the population.
+                      <h4>
+                        Technical Appendix:</h4>
+                      <p>
+                        To prove that the example above is correct, use <a href="probfall.html#BayesTheorem">
+                          Bayes' Theorem</a> from probability theory: Let "h" represent the proposition
+                        that Pat is homosexual and "d" the proposition that Pat has disease D. We assumed
+                        that the base rate of homosexuality is 10%, so
+                        <br />
+                        <strong>P(h) = .1</strong>. Therefore, the probability of Pat not being homosexual
+                        is 90%, that is, <strong>P(not-h) = .9</strong>. We don't know the exact rates of
+                        disease D among homosexuals or non-homosexuals, but we are given that the rate among
+                        the former is three times the rate among the latter, so <strong>P(d | h) = 3P(d |
+                          not-h)</strong>. If we plug this information into Bayes' Theorem, we get the following
+                        equation:
+                        <p>
+                          <strong>P(h | d) =
+                            <br />
+                            [3P(d | not-h) X .1]/[3P(d | not-h) X .1] + .9P(d | not-h)</strong>
+                          <p>
+                            After multiplying and adding, we get:
+                            <p>
+                              <strong>P(h | d) = .3P(d | not-h)/1.2P(d | not-h)</strong>
+                              <p>
+                                The "<strong>P(d | not-h)</strong>"s in both the numerator and denominator cancel
+                                out, giving us the answer:
+                                <p>
+                                  <strong>P(h | d) = 3/12 = .25</strong>, that is, the probability that Pat is homosexual
+                                  given that he/she has disease D is 25%.
+                                  <p>
+                                    <strong>Source:</strong> Maya Bar-Hillel, "The Base Rate Fallacy in Probability
+                                    Judgments", <cite>Acta Psychologica</cite> 44, pp. 211-233. The thought experiment
+                                    is a variation of the "suicide problem" discussed on pages 221-223.
+                                    <hr />
+</body>
+</html>
