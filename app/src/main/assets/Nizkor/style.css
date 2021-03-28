@@ -1,0 +1,39 @@
+body {
+  background-color:#000000;
+  color:#ffffff;
+  /* font-family:@Arial Unicode MS; */
+}
+
+h1 {
+  color:orange;
+  /* text-align:center; */
+}
+
+h2 {
+  color:orange;
+  /* text-align:center; */
+}
+
+h3 {
+  color:orange;
+  /* text-align:center; */
+}
+
+h4 {
+  color:orange;
+  /* text-align:center; */
+}
+
+p {
+  /*
+  font-family:"Times New Roman";
+  font-size:20px;
+  */
+}
+
+table, th, td {
+	color:white;
+	border:1px solid white;
+	padding:3; 
+	text-align:center;
+}

@@ -1,0 +1,128 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+  <h2>
+    Probabilistic Fallacy</h2>
+  <br>
+  <p>
+    <strong>Type:</strong> <a href="formfall.html">Formal Fallacy</a>
+    <h3>
+      Exposition:</h3>
+    <p>
+      A probabilistic <a href="glossary.html#Argument">argument</a> is one which concludes
+      that something has some probability based upon information about probabilities given
+      in its <a href="glossary.html#Premiss">premiss</a>es. Such an <a href="glossary.html#Argument">
+        argument</a> is in<a href="glossary.html#Valid">valid</a> when the inference from
+      the premisses to the <a href="glossary.html#Conclusion">conclusion</a> violates
+      the laws of probability. Probabilistic fallacies are formal ones because they involve
+      reasoning which violates the formal rules of probability theory. Thus, understanding
+      probabilistic fallacies requires a knowledge of probability theory.
+      <h3>
+        A Short Introduction to Probability Theory:</h3>
+      <p>
+        In the following laws of probability, the probability of a statement, <strong>s</strong>,
+        is represented as: P(<strong>s</strong>).
+        <ol>
+          <li>P(<strong>s</strong>) &ge; 0.
+            <p>
+              The probability of a statement is a real number greater than or equal to 0. In other
+              words, zero is the lowest probability, and there are no negative probabilities.
+              <li>P(<strong>t</strong>) = 1, if <strong>t</strong> is a <a href="glossary.html#Tautology">
+                tautology</a>.
+                <p>
+                  The probability of any tautology is equal to 1.
+                  <li>P(<strong>s</strong> or <strong>t</strong>) = P(<strong>s</strong>) + P(<strong>t</strong>),
+                    if <strong>s</strong> and <strong>t</strong> are <a href="glossary.html#ContraryProps">
+                      contraries</a>.
+                    <p>
+                      If two statements are contraries, then the probability of their <a href="glossary.html#Disjunction">
+                        disjunction</a> is equal to the sum of their individual probabilities.
+                      <p>
+                        A conditional probability is the probability of a statement on the condition that
+                        some statement is true. For instance, the probability of getting lung cancer is
+                        an unconditional probability, whereas the probability of getting lung cancer given
+                        that you smoke cigarettes is a conditional probability, as is the probability of
+                        getting lung cancer if you don't smoke. Each of these probabilities is distinct:
+                        The probability of getting lung cancer if you smoke is higher than the unconditional
+                        probability of getting lung cancer, which is higher than the probability of getting
+                        lung cancer if you don't smoke. The conditional probability of <strong>s</strong>
+                        given <strong>t</strong> is represented as: P(<strong>s</strong> | <strong>t</strong>).
+                        <li>P(<strong>s</strong> | <strong>t</strong>) = P(<strong>s</strong> & <strong>t</strong>)/P(<strong>t</strong>)
+                          or, equivalently, P(<strong>s</strong> & <strong>t</strong>) = P(<strong>s</strong>
+                          | <strong>t</strong>)P(<strong>t</strong>).
+                          <p>
+                            The conditional probability of <strong>s</strong> given <strong>t</strong> is equal
+                            to the probability of the <a href="glossary.html#Conjunction">conjunction</a> of
+                            <strong>s</strong> and <strong>t</strong> divided by the probability of <strong>t</strong>,
+                            assuming that P(<strong>t</strong>) &ne; 0. The equivalent part is called "the multiplication
+                            rule". If <strong>s</strong> and <strong>t</strong> are independent&#8213;that is,
+                            if P(<strong>s</strong> | <strong>t</strong>) = P(<strong>s</strong>) and P(<strong>t</strong>
+                            | <strong>s</strong>) = P(<strong>t</strong>)&#8213;then the rule simplifies to:
+                            P(<strong>s</strong> & <strong>t</strong>) = P(<strong>s</strong>)P(<strong>t</strong>
+          ).</ol>
+        <p>
+          The above laws are logically sufficient to prove every fact within probability theory,
+          including a theorem that is important for explaining probabilistic fallacies:
+          <p>
+            <a name="BayesTheorem"><strong>Bayes' Theorem:</strong></a> P(<strong>s | t</strong>)
+            =
+            <p>
+              P(<strong>t | s</strong>)P(<strong>s</strong>) / [P(<strong>t | s</strong>)P(<strong>s</strong>)
+              + P(<strong>t | not-s</strong>)P(<strong>not-s</strong>)].
+              <p>
+                <strong>Proof:</strong> From axiom 4, we know that P(<strong>s</strong> | <strong>
+                  t</strong>) = P(<strong>s</strong> & <strong>t</strong>)/P(<strong>t</strong>).
+                Since "<strong>s</strong> & <strong>t</strong>" is logically equivalent to "<strong>t</strong>
+                & <strong>s</strong>", P(<strong>s</strong> & <strong>t</strong>) = P(<strong>t</strong>
+                | <strong>s</strong>)P(<strong>s</strong>), again by axiom 4, which is the numerator
+                of the fraction in Bayes' Theorem. To get the denominator of the fraction, "<strong>t</strong>"
+                is logically equivalent to "(<strong>t</strong> & <strong>s</strong>) or (<strong>t</strong>
+                & <strong>not-s</strong>)", so P(<strong>t</strong>) =
+                <br />
+                P[(<strong>t</strong> & <strong>s</strong>) or (<strong>t</strong> & <strong>not-s</strong>)].
+                Since "(<strong>t</strong> & <strong>s</strong>)" and "(<strong>t</strong> & <strong>
+                  not-s</strong>)" are contraries, it follows that P[(<strong>t</strong> & <strong>s</strong>)
+                or (<strong>t</strong> & <strong>not-s</strong>)] =
+                <br />
+                P(<strong>t</strong> & <strong>s</strong>) + P(<strong>t</strong> & <strong>not-s</strong>),
+                by axiom 3. By applying axiom 4 again, we have that P(<strong>t</strong>) = P(<strong>t
+                  | s</strong>)P(<strong>s</strong>) + P(<strong>t | not-s</strong>)P(<strong>not-s</strong>),
+                which is the denominator.
+                <h3>
+                  Exposure:</h3>
+                <p>
+                  Mistakes in reasoning about probabilities are typically not treated as formal fallacies
+                  by logicians. This is presumably because logicians usually do not make a study of
+                  probability theory, and the mathematicians who do don't generally study logical
+                  fallacies. However, in recent decades, psychologists have discovered through observation
+                  and experiment that people are prone to make certain types of error when reasoning
+                  about probabilities. As a consequence, there is now much more empirical evidence
+                  for the existence of certain fallacies about probabilities than there is for most
+                  traditional fallacies. Again, logicians are often unaware of the existence of this
+                  evidence, and they usually do not discuss it in works on logical fallacies. It is
+                  about time that logicians broadened their intellectual horizons and began to take
+                  note of discoveries in the psychology of reasoning.
+                  <iframe src="http://rcm.amazon.com/e/cm?t=thefallacyfil-20&o=1&p=8&l=as1&asins=1560257946&fc1=006699&IS2=1&lt1=_blank&lc1=006666&bc1=FFFFFF&bg1=FFFFFF&f=ifr&npa=1"
+                    style="width: 120px; height: 240px;" scrolling="no" marginwidth="0" marginheight="0"
+                    frameborder="0" align="right"></iframe>
+                  <p>
+                    <strong>Subfallacies:</strong>
+                    <ul>
+                      <li><a href="baserate.html">The Base Rate Fallacy</a>
+                        <li><a href="conjunct.html">The Conjunction Fallacy</a>
+                          <li><a href="gamblers.html">The Gambler's Fallacy</a>
+                            <li><a href="hothandf.html">The Hot Hand Fallacy</a>
+                              <li><a href="multcomp.html">The Multiple Comparisons Fallacy</a></ul>
+                    <p>
+                      <strong>Resource:</strong> Amir D. Aczel, <cite>Chance: A Guide to Gambling, Love,
+                        the Stock Market, & Just About Everything Else</cite> (2004). About as untechnical
+                      an introduction to probability theory as you will find.
+                      <p>
+                        <strong>Acknowledgment:</strong> Thanks to Emil William Kirkegaard for pointing
+                        out a problem, which has subsequently been fixed, with the wording of the informal
+                        description of the first axiom of probability.
+                        <hr />
+</body>
+</html>
